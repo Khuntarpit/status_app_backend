@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
 const quoteSchema = mongoose.Schema({
-  category: {
-    type: String,
+  category_id: {
+    type: mongoose.Types.ObjectId,
     required: true,
   },
-  subcategory: {
-    type: String,
+  subcategory_id: {
+    type: mongoose.Types.ObjectId,
     required: true,
   },
   quote: {
